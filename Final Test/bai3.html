@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai3.css">
+</head>
+<body>
+    <script src="./bai3.js"></script>
+    
+    <div class="userHeading">Users</div>
+    <div class="headingFunction">
+    <div class="searching">
+        <img src="data:image/png;base64,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" alt="" id="finding">
+        <div id="search">Searching Users</div>
+    </div>
+    <div class="function">
+        <div id="reputation">Reputation</div>
+        <div id="newUsers">New Users</div>
+        <div id="voters">Voters</div>
+        <div id="editors">Editors</div>
+        <div id="moderators">Moderators</div>
+    </div>
+</div>
+<div class="users">
+    <div class="row1">
+        <div class="person1">
+        <img src="https://s3-alpha-sig.figma.com/img/f7ff/f537/1cfe5c1bcc03b9b81c2d7b42f5828a59?Expires=1703462400&Signature=M62GHpN-1y6bLjDF2oUPRXBBe3xLMQG-Mq9qzg4UTit1TtpbPFuJctR7A0wvDybrb~kSh1FelpRvCHX6dJAgwlylxVUj6R7m~Hz76DsZ8YtCAtm06LHioSzvLVOIbQYhESJEJjUwtQXpkgcMTEbfdoNlalUSS4RGoMdR6uFYLrNv4v5aZ1ZjH6ZNWx7Y-dOSS-7ZePctQsYyWUmbra~PKSkBDALQWiDqkkqvLsQtkEFoxygXu21NoKrBHwlj4X1GBWwLMgDaNhQQAtVBAfQwHZWnfehr6gkhdlVvjvnMrEj7Xj2jWQTs5fLdSYr8iaL06sDrUVC-31ONgjBvVSs4-A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" id="img1">
+        <div class="intro1">
+        <div id="name1">Lelah Nichols</div>
+        <div id="troy">Troy, MI</div>
+        <div class="f12">
+        <div id="clothes">clothes</div>
+        <div id="stem">stem</div>
+         </div>
+        </div>
+    </div>
+    <div class="person2">
+        <img src="https://s3-alpha-sig.figma.com/img/41ed/baf1/225faee70e15159236035178cca54a11?Expires=1703462400&Signature=eT63mfVuvm27tQEXaAw7y2RMo0587kwFmlo~FjI5D4X9e~KjKlFe6WK3gj9DHia6hTIYupzCKMHGdaUU86tmbX8gkLLajA8guP2kCBpxBiQjqhWqKfC-EffDdM59UiI9YWwXI-cUTMbn9ORfvmDDH3IK-rBjUpZf2RE29SX2B3QIx3bV5LETU6FQDbgnGmvRkbIzoiVPIKDJpVys3AkrGjlrZOSbKQVMEIQqK-WsOA-~sW5PB66gUNmY1TtCkSehuZPmNQT9f150AxlwVFdjyvHh~psZc6y2rJsj6kLIJ5hqZpiUCabycFm8n7UbfWFaAyu6l4meiiWTwT7TVy3fkw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" id="img2">
+        <div class="intro2">
+
+        <div id="name2">Jesus Weiss</div>
+        <div id="forth">Fort Worth, TX</div>
+        <div class="f12">
+        <div id="headset">headset</div>
+        <div id="gadget">gadget</div>
+       </div>
+        <div class="f34">
+            <div id="speed">speed</div>
+        <div id="winter">winter</div>
+        </div>
+        
+           
+        </div>
+    </div>
+    <div class="person3">
+        <img src="https://s3-alpha-sig.figma.com/img/afd7/fd08/2942944e4e7e80e66c97c9b4491b1092?Expires=1703462400&Signature=k8g5RhW34xb1A7FtgzbsdXLVnl~JhW919HXmApX2l3HtSiR5uWtq4v8mYnQRW6hac8dFbY30FeE3vOjPJH9SHXaXnA6MhTA77OvzC3F3UOovYEx1ygareBwealsnaNlUnVCTqXiiZ~Ft2s-moKgJmBgyjj7hXpOJy7m3VDfluKVeJRP7vtmIkdEhhVml2OrrZ2B8ADQMxF56ocuGidt4aLZt-nStEniQkdWCHk~kPEHCOMDg0T4hXNlHtCuZSwbbx7Ey78zBfcDbGq3yTLJfW9L5GiuE6Z~Zpln5SpplD8uHRomsWuoGv3CECQy0RpPXg~4f77fuld9I~5BDujUeRQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" id="img3">
+        <div class="intro3">
+        <div id="name3">Annie Rice</div>
+        <div id="austin">Austin, TX</div>
+        <div class="f12">
+            <div id="road">road</div>
+        <div id="mountain">mountain</div>
+        
+        <div id="trip">trip</div>
+    </div>
+        <div class="f34">
+            <div id="earth">earth</div>
+        <div id="nature">nature</div>
+        </div>
+        
+        
+        
+        </div>
+    </div>
+</div>
+    <div class="row2">
+        <div class="person4">
+        <img src="https://s3-alpha-sig.figma.com/img/c81f/faee/d7f9f9b81bb8acfe93d3b739115d770e?Expires=1703462400&Signature=N2sECnqOc4DYC4uLC1ETA4ycOVnYG89KY9PpY35g6RWT2wYRkOdYh0IeHvBQmzaV1snwMd-3HnXiUwjPSagVvKVG7gMTEdYRmwJ3CUupc0fTtQLcjzWeXuk5oeKvvkFl0I7Gj3dyBD9qrROHxLkAIw94FRtV84JSbnJwmZ77mgtXu8hu2ojg19RGCa5Nr-hpr041sCma6VwMycCRnDV7CxGaz~od8T1I8to0jaZ1LoSHqqtt4S5qrY7J8vm5YgcqpPEgC1MYRJzd-NKk3NEVSseArt0AzzoJKowuAh8ij4FWmAuV3Dsns78VbyoUkUNknsQzRtC9GgrIo3IWOmxf7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" id="img4">
+        <div class="intro4">
+        <div id="name4">Robert Browner</div>
+        <div id="oh">Cincinnati, OH</div>
+        
+        <div class="f12">
+        <div id="maintenance">Maintenance</div>
+        <div id="gears">gears</div>
+       </div>
+       <div class="f34">
+        <div id="frames">frames</div>
+        <div id="repair">repair</div>
+       </div>
+    </div>
+    <div class="person5">
+        <img src="https://s3-alpha-sig.figma.com/img/11b3/77e8/6aa344879afba431d7cee9da5ee62cde?Expires=1703462400&Signature=fb96GdsbWCAxwLepRxHx0xzgUEpE~uJEsi5x6kJBGGYoke0OuuvSh3uZKgreKwotQ5P008ShXgS0bMcVE5EOVWDkRoO2S8908HxKXGMbp7wr2lZVrtSb-7zRIV4imBm4Cmfn7ZvMoyJFl7hPao8LKwcVJ652czjz0DCOj3PYA7sWzjnrbIn1xpJqnPh4BPhje6DkKz~JqQGhiF2dTvu9~lQ1OldC~0LiSbhWF5NXDA6pYYnh3jQ~c8inYkg3nKaywD7rkZEkf-RH2-aDptxsu8GjAoou5~kqDyUY6VxRnOEufhYvOgDwmAKxSAJ5R5eYqnCBvPm-GD8XSGUjZNnA1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" id="img5">
+        <div class="intro5">
+        <div id="name5">Amy Campbell</div>
+        <div id="al">Warrior, AL</div>
+        
+        <div class="f12">
+        <div id="music">music</div>
+        <div id="disks">disks</div>
+        </div>
+    </div>
+    </div>
+    <div class="person6">
+        <img src="https://s3-alpha-sig.figma.com/img/0507/db32/e190425c8e91ed35ab3894e77679cedd?Expires=1703462400&Signature=gPH-5QYvdnJxcLaoKYTUyb7lJvO88ETUkz8QUgJv85IFaJmdoqJtLBMVOkJVjZGtODRY1W0F4JeUsydaBfj-Lo5Lm-zs7K-cgpbb2wynGaYee-4IxqNVqtcHYpXJE~PTdotuHrbFlJJ6NanahSIF74Da0HKE2gkOLoKdoWiRmi14FJD6ILL9Cook4CRYt8aN6q4rKrD5Le0pUPobjUPPFiiG4xX2oJhqXBwvaefU1K2bJdOLiz5L6cwfdUzqcxE9HpuphDNEN0F2pB1msSbB58yIXQrL7ZwXW5iWxXvi5CeAYKrlyb7nlv1LlG80btUaOG2DuowkoB2XT28ami~1oA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" id="img6">
+        <div class="intro6">
+        <div id="name6">Anthony S.Morin</div>
+        <div id="nj">Lyndhurst, NJ</div>
+        
+        <div class="f12">
+        <div id="vintage">vintage</div>
+        <div id="electric">electric</div>
+        </div>
+        
+    </div>
+</div>
+</div>
+    
+</body>
+</html>
